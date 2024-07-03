@@ -13,7 +13,9 @@ if (Qt6_VERSION VERSION_GREATER_EQUAL 6.3)
     qt_standard_project_setup()
 endif()
 
-qt_add_executable(proba4App src/main.cpp)
+qt_add_executable(proba4App src/main.cpp
+    src/cpphandler.h
+    src/cpphandler.cpp)
 
 qt_add_resources(proba4App "configuration"
     PREFIX "/"
